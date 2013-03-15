@@ -6,7 +6,8 @@ import com.grouzen.quoridor.QuoridorBase;
 public class QuoridorDesktop {
 
 	public static void main(String[] args) {
-		new LwjglApplication(new QuoridorBase(), "Quoridor", 640, 480, false);
+		
+		new LwjglApplication(new QuoridorBase(), "Quoridor", 640, 480, true);
 	}
 	
 }

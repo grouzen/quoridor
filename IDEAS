@@ -1,0 +1,21 @@
+Need to implement:
+- screens manager
+  We need abstraction for various types of screens
+  which will be presented, such as menu screen,
+  main gameplay screen, score screen, etc.
+  - scene manager
+    Manages scene graph, makes intersection and bounding.
+    - scene graph
+      In fact in this game there is no such amount of objects
+      and all of them are always visible, so I need think about
+      realy it must be a tree or graph
+    
+Links:
+- about all: scene managment, scene graph, screens, states, etc
+  very usefull
+  http://java.cms.livjm.ac.uk/homura/about.php?project=homura
+- about structuring world objects and their rendering
+  http://gamedev.stackexchange.com/questions/9896/structuring-game-world-entities-and-their-rendering-objects
+  http://gamedev.stackexchange.com/questions/3404/architecture-a-for-a-central-renderer-rather-than-self-rendering
+  http://stackoverflow.com/questions/3000525/whats-wrong-with-the-architecture-of-a-game-object-drawing-and-updating-itself
+  http://stackoverflow.com/questions/9875953/opengl-and-oop-program-structure

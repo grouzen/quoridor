@@ -1,42 +1,46 @@
 package com.grouzen.quoridor;
 
 import com.badlogic.gdx.ApplicationListener;
+import com.grouzen.quoridor.screen.GameplayScreen;
+import com.grouzen.quoridor.screen.Screen;
+import com.grouzen.quoridor.screen.ScreenManager;
 
 public class QuoridorBase implements ApplicationListener {
 
+	private ScreenManager screenManager;
+	
 	@Override
 	public void create() {
-		// TODO Auto-generated method stub
+		screenManager = ScreenManager.getInstance();
+		
+		// TODO: change GameplayScreen to MainMenuScreen
+		screenManager.pushScreen(new GameplayScreen());
 
 	}
 
 	@Override
 	public void resize(int width, int height) {
-		// TODO Auto-generated method stub
 
 	}
 
 	@Override
 	public void render() {
-		// TODO Auto-generated method stub
-
+		Screen currentScreen = screenManager.getCurrentScreen(); 
+		currentScreen.render();
 	}
 
 	@Override
 	public void pause() {
-		// TODO Auto-generated method stub
 
 	}
 
 	@Override
 	public void resume() {
-		// TODO Auto-generated method stub
 
 	}
 
 	@Override
 	public void dispose() {
-		// TODO Auto-generated method stub
 
 	}
 
